@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat");
+
+body {
+  background: #585454;
+  color: #f5f5f5;
+}
+
+a {
+  color: #50ffb1;
+}
+
+a:hover {
+  color: #f602de;
+}
+nav {
+  margin: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #585454;
+  z-index: 1;
+}
+
+nav ul {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  color: #f602de;
+}
+
+#header1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #f5f5f5;
+  position: relative;
+  width: 25%;
+  padding-bottom: 10.25%;
+  height: 0;
+  margin: 0 auto;
+}
+
+#iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 95.25%;
+  height: 0;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+.bandSlide {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 20px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 7vw;
+  text-align: center;
+}
+.header {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  text-align: center;
+}
+
+.album-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+.subheader {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.divide {
+  width: 80%;
+}
+
+.album {
+  width: 80%;
+  max-width: 750px;
+  margin: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+
+.album-cover {
+  position: sticky;
+  top: 50px;
+}
+
+.album-info {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.about-this-album {
+  text-align: justify;
+}
+
+/* For viewing on mobile devices */
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 10vw;
+  }
+
+  .header {
+    font-size: 8vw;
+  }
+
+  .subheader {
+    font-size: 6vw;
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    padding: 0px;
+    display: block;
+  }
+
+  .album {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 15px;
+  }
+  .album-cover,
+  .album-info,
+  .track-listing {
+    margin: auto;
+  }
+
+  .album-cover {
+    position: static;
+  }
+
+  .album-title {
+    font-size: 7vw;
+  }
+}
