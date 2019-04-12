@@ -11,6 +11,7 @@ As well as serving as a chance to improve our skills with these technologies, we
 Collaborators:
 @jessicadavey
 @onteriowright
+@rollsthomas
 
 
 Trello Board:
